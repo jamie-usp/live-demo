@@ -1,4 +1,4 @@
-# Unified Streaming Live Origin Demo
+# Unified Streaming Live Origin Demo (3 Encoder Ingest)
 
 This demonstration shows a [Unified Streaming](http://www.unified-streaming.com/products/unified-origin) Origin setup with a Live publishing point and uses [FFmpeg](https://ffmpeg.org/) as an encoder to push an input stream.
 
@@ -21,10 +21,12 @@ This can be done by running the following command in the directory of this demo'
 
 ```bash
 #!/bin/sh
-docker-compose build ffmpeg
+docker-compose build ffmpeg-enc1
+docker-compose build ffmpeg-enc2
+docker-compose build ffmpeg-enc3
 ```
 
-Which will create a Docker image called livedemo_ffmpeg with the patch applied.
+Which will create a Docker image called livedemo_ffmpeg_X with the patch applied.
 
 
 ## Usage
