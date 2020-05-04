@@ -70,5 +70,9 @@ ffplay http://localhost/test/test.isml/.m3u8
 
 And it should look something like:
 
-![example](https://raw.githubusercontent.com/unifiedstreaming/live-demo/master/ffmpeg/example_logo.png)
+![example1](https://raw.githubusercontent.com/jamie-usp/live-demo/triple_ingest/ffmpeg_enc1.png)
+
+![example2](https://raw.githubusercontent.com/jamie-usp/live-demo/triple_ingest/ffmpeg_enc2.png)
+
+![example3](https://raw.githubusercontent.com/jamie-usp/live-demo/triple_ingest/ffmpeg_enc3.png)
 
