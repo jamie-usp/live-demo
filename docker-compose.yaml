@@ -32,3 +32,12 @@ services:
     depends_on:
       live-origin:
         condition: service_healthy
+  ffmpeg-enc3:
+    build: ffmpeg-enc3
+    environment:
+      - PUB_POINT_URI=http://live-origin/test/test.isml/Streams(ffmpeg-enc3)
+      - FRAME_RATE=50
+      - GOP_LENGTH=96
+    depends_on:
+      live-origin:
+        condition: service_healthy
